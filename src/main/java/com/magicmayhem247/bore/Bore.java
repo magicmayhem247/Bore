@@ -1,5 +1,6 @@
 package com.magicmayhem247.bore;
 
+import com.magicmayhem247.bore.block.BoreBlocks;
 import com.magicmayhem247.bore.item.BoreItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,7 +24,7 @@ public class Bore
 
         //Registers
         BoreItems.register(eventBus);
-
+        BoreBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 

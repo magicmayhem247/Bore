@@ -1,0 +1,9 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "bore:block/fired_alloy_furnace_updown",
+    "front": "bore:block/fired_alloy_furnace_front",
+    "side": "bore:block/fired_alloy_furnace_side"
+  }
+}
+

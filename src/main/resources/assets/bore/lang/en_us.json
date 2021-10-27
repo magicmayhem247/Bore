@@ -1,7 +1,13 @@
 {
+  "itemGroup.boreTab": "Bore",
   "item.bore.zinc_ingot": "Zinc Ingot",
   "item.bore.zinc_nugget": "Zinc Nugget",
   "item.bore.zinc_chunk": "Zinc Chunk",
   "item.bore.brass_ingot": "Brass Ingot",
-  "item.bore.brass_nugget": "Brass Nugget"
+  "item.bore.brass_nugget": "Brass Nugget",
+  "block.bore.zinc_block": "Zinc Block",
+  "block.bore.zinc_ore": "Zinc Ore",
+  "block.bore.brass_block": "Brass Block",
+  "block.bore.fired_alloy_furnace": "Fired Alloy Furnace"
+
 }

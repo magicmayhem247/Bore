@@ -1,5 +1,6 @@
 package com.magicmayhem247.bore;
 
+import com.magicmayhem247.bore.item.BoreItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,8 +21,11 @@ public class Bore
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        eventBus.addListener(this::setup);
+        //Registers
+        BoreItems.register(eventBus);
 
+
+        eventBus.addListener(this::setup);
 
 
         MinecraftForge.EVENT_BUS.register(this);

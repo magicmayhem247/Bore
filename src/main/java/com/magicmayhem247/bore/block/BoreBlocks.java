@@ -25,6 +25,8 @@ public class BoreBlocks
             .of(Material.METAL).strength(6f)));
     public static final RegistryObject<Block> ZINC_ORE = registerBlock("zinc_ore", () -> new Block(BlockBehaviour.Properties
             .of(Material.METAL).strength(6f)));
+    public static final RegistryObject<Block> DEEPSLATE_ZINC_ORE = registerBlock("deepslate_zinc_ore", () -> new Block(BlockBehaviour.Properties
+            .of(Material.METAL).strength(6f)));
 
     public static final RegistryObject<Block> BRASS_BLOCK = registerBlock("brass_block", () -> new Block(BlockBehaviour.Properties
             .of(Material.METAL).strength(6f)));

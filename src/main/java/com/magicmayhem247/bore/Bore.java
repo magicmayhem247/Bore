@@ -2,6 +2,7 @@ package com.magicmayhem247.bore;
 
 import com.magicmayhem247.bore.block.BoreBlocks;
 import com.magicmayhem247.bore.item.BoreItems;
+import com.magicmayhem247.bore.world.BoreOreGeneration;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,7 +19,8 @@ public class Bore
     public static final String MOD_ID = "bore";
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public Bore() {
+    public Bore()
+    {
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
@@ -34,8 +36,9 @@ public class Bore
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        event.enqueueWork(() -> {
+            BoreOreGeneration.registerConfiguredFeatures();
+        });
     }
 
 }

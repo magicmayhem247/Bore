@@ -24,8 +24,7 @@ public class BoreOreGeneration
                 veinSize))
                 .rangeUniform(VerticalAnchor.bottom(),
                 VerticalAnchor.aboveBottom(maxHeight))
-                .squared()
-                .rarity(1);
+                .squared();
     }
 
     public static void registerConfiguredFeatures()

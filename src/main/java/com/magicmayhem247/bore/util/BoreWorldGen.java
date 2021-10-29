@@ -41,7 +41,7 @@ public class BoreWorldGen
         this.zincOreMaxClustersPerChunk = builder
                 .comment("Maximum number of Zinc Ore clusters per chunk.")
                 .worldRestart()
-                .defineInRange("zincOreMaxClustersPerChunk", 1, 1, 1);
+                .defineInRange("zincOreMaxClustersPerChunk", 1/2, 1, 1);
 
         this.zincOrePerCluster = builder
                 .comment("Maximum number of Zinc Ores to generate in each cluster.")

@@ -1,7 +1,6 @@
 package com.magicmayhem247.bore.item;
 
 import com.magicmayhem247.bore.Bore;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fmllegacy.RegistryObject;

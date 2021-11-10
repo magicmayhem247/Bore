@@ -1,0 +1,10 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "bore:block/rudimentary_boiler_top",
+    "front": "bore:block/rudimentary_boiler_front",
+    "side": "bore:block/rudimentary_boiler_side",
+    "bottom": "bore:block/rudimentary_boiler_bottom"
+  }
+}
+

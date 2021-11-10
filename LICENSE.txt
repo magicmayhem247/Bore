@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2021 Tutorials By Kaupenjoe
+Copyright (c) 2021 magicmayhem247
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Note from developer
+
+Feel free to use/reference/copy any code within this project into your own, no credit is needed.
+However, you do this at your own risk, my code is by no means efficient and I would not recommend
+using it.
+
+"If it looks stupid, but it works, it ain't stupid!"

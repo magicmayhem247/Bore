@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bore:brass_ingot"
+    }
+  ],
+  "result": {
+    "item": "bore:brass_nugget",
+    "count": 9
+  }
+}

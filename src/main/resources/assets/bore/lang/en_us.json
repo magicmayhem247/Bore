@@ -9,6 +9,9 @@
   "block.bore.zinc_ore": "Zinc Ore",
   "block.bore.deepslate_zinc_ore": "Deepslate Zinc Ore",
   "block.bore.brass_block": "Brass Block",
-  "block.bore.fired_alloy_furnace": "Fired Alloy Furnace"
+  "block.bore.fired_alloy_furnace": "Fired Alloy Furnace",
+  "block.bore.rudimentary_boiler": "Rudimentary Boiler",
+  "block.bore.brass_pipe": "Brass Pipe"
+
 
 }

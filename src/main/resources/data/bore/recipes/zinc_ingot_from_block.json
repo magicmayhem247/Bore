@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bore:zinc_block"
+    }
+  ],
+  "key": {
+    "z": {
+      "item": "bore:zinc_block"
+    }
+  },
+  "result": {
+    "item": "bore:zinc_ingot",
+    "count": 9
+  }
+}

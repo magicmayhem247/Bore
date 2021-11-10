@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb",
+    "bbb",
+    "bbb"
+  ],
+  "key": {
+    "b": {
+      "item": "bore:brass_ingot"
+    }
+  },
+  "result": {
+    "item": "bore:brass_block"
+  }
+}

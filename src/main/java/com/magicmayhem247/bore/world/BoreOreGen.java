@@ -23,21 +23,21 @@ public final class BoreOreGen
 
     public static ImmutableList<OreConfiguration.TargetBlockState> ZINC_TARGET_BLOCKS;
 
-    public static ConfiguredFeature<?, ?> buildOverworldOre(ImmutableList<OreConfiguration.TargetBlockState> targets, int veinSize, int maxHeight, int timesRarer)
+    public static ConfiguredFeature<?, ?> buildOverworldOre(ImmutableList<OreConfiguration.TargetBlockState> targets, int veinSize, int maxHeight)
     {
         return Feature.ORE.configured(new OreConfiguration(targets,
                 veinSize))
                 .rangeUniform(VerticalAnchor.bottom(),
                 VerticalAnchor.aboveBottom(maxHeight)).squared()
                 .squared()
-                .rarity(timesRarer);
+                .count(BoreWorldGen.zincOreMaxClustersPerChunk.get());
 
     }
 
     public static void registerConfiguredFeature()
     {
         ZINC_TARGET_BLOCKS = ImmutableList.of(OreConfiguration.target(OreConfiguration.Predicates.STONE_ORE_REPLACEABLES, BoreBlocks.ZINC_ORE.get().defaultBlockState()));
-        ZINC_OVERWORLD = buildOverworldOre(ZINC_TARGET_BLOCKS, BoreWorldGen.zincOrePerCluster.get(), BoreWorldGen.zincOreMaxY.get(), BoreWorldGen.zincOreMaxClustersPerChunk.get());
+        ZINC_OVERWORLD = buildOverworldOre(ZINC_TARGET_BLOCKS, BoreWorldGen.zincOrePerCluster.get(), BoreWorldGen.zincOreMaxY.get());
 
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new ResourceLocation(Bore.MOD_ID, "zinc_ore"), ZINC_OVERWORLD);

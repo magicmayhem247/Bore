@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "bore:block/rudimentary_boiler",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "bore:block/rudimentary_boiler"
+    },
+    "facing=south": {
+      "model": "bore:block/rudimentary_boiler",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bore:block/rudimentary_boiler",
+      "y": 270
+    }
+  }
+}

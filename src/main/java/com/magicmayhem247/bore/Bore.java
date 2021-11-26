@@ -40,7 +40,8 @@ public class Bore
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        event.enqueueWork(() -> {
+        event.enqueueWork(() ->
+        {
             BoreOreGen.registerConfiguredFeature();
         });
     }

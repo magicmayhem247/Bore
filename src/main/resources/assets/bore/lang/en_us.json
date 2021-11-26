@@ -5,13 +5,15 @@
   "item.bore.zinc_chunk": "Zinc Chunk",
   "item.bore.brass_ingot": "Brass Ingot",
   "item.bore.brass_nugget": "Brass Nugget",
+  "item.bore.steam_bucket": "Steam Bucket",
   "block.bore.zinc_block": "Zinc Block",
   "block.bore.zinc_ore": "Zinc Ore",
   "block.bore.deepslate_zinc_ore": "Deepslate Zinc Ore",
   "block.bore.brass_block": "Brass Block",
   "block.bore.fired_alloy_furnace": "Fired Alloy Furnace",
   "block.bore.rudimentary_boiler": "Rudimentary Boiler",
-  "block.bore.brass_pipe": "Brass Pipe"
+  "block.bore.brass_pipe": "Brass Pipe",
+  "fluid.bore.steam": "Steam"
 
 
 }

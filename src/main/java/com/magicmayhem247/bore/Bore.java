@@ -1,6 +1,7 @@
 package com.magicmayhem247.bore;
 
 import com.magicmayhem247.bore.block.BoreBlocks;
+import com.magicmayhem247.bore.fluid.BoreFluids;
 import com.magicmayhem247.bore.item.BoreItems;
 import com.magicmayhem247.bore.util.BoreConfigManager;
 import com.magicmayhem247.bore.world.BoreOreGen;
@@ -29,6 +30,7 @@ public class Bore
         //Registers
         BoreItems.register(eventBus);
         BoreBlocks.register(eventBus);
+        BoreFluids.register(eventBus);
 
         eventBus.addListener(this::setup);
 

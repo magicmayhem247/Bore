@@ -3,11 +3,13 @@ package com.magicmayhem247.bore.block;
 import com.magicmayhem247.bore.Bore;
 import com.magicmayhem247.bore.block.machine.FiredAlloyFurnaceBlock;
 import com.magicmayhem247.bore.block.machine.RudimentaryBoilerBlock;
+import com.magicmayhem247.bore.fluid.BoreFluids;
 import com.magicmayhem247.bore.item.BoreCreativeTab;
 import com.magicmayhem247.bore.item.BoreItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.client.event.ColorHandlerEvent;
@@ -41,9 +43,10 @@ public class BoreBlocks
     public static final RegistryObject<RudimentaryBoilerBlock> RUDIMENTARY_BOILER_BLOCK = registerBlock("rudimentary_boiler", () -> new RudimentaryBoilerBlock(BlockBehaviour.Properties
             .of(Material.METAL).strength(8f)));
 
-    //Pipes
-    public static final RegistryObject<Block> BRASS_PIPE = registerBlock("brass_pipe", ()-> new Block(BlockBehaviour.Properties
-            .of(Material.METAL).strength(6f)));
+
+    //FluidBlocks
+    public static RegistryObject<LiquidBlock> STEAM_BLOCK = BLOCKS.register("steam_block", () -> new LiquidBlock(BoreFluids.STEAM_STILL, BlockBehaviour.Properties.of(Material.WATER).noCollission().strength(100f).noDrops()));
+
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)

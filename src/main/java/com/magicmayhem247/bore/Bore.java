@@ -1,7 +1,7 @@
 package com.magicmayhem247.bore;
 
 import com.magicmayhem247.bore.block.BoreBlocks;
-import com.magicmayhem247.bore.fluid.BoreFluids;
+import com.magicmayhem247.bore.fluid.util.BoreFluids;
 import com.magicmayhem247.bore.item.BoreItems;
 import com.magicmayhem247.bore.util.BoreConfigManager;
 import com.magicmayhem247.bore.world.BoreOreGen;

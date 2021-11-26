@@ -1,8 +1,7 @@
 package com.magicmayhem247.bore.item;
 
 import com.magicmayhem247.bore.Bore;
-import com.magicmayhem247.bore.fluid.BoreFluids;
-import com.magicmayhem247.bore.item.tool.SteamBucketItem;
+import com.magicmayhem247.bore.fluid.util.BoreFluids;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,7 +22,7 @@ public class BoreItems
     public static final RegistryObject<Item> BRASS_NUGGET = ITEMS.register("brass_nugget", () -> new Item(new Item.Properties().tab(BoreCreativeTab.BORE_TAB)));
 
     //Tools
-    public static final RegistryObject<SteamBucketItem> STEAM_BUCKET = ITEMS.register("steam_bucket", () -> new SteamBucketItem(BoreFluids.STEAM_STILL, new Item.Properties().tab(BoreCreativeTab.BORE_TAB).stacksTo(1)));
+    public static final RegistryObject<BucketItem> STEAM_BUCKET = ITEMS.register("steam_bucket", () -> new BucketItem(BoreFluids.STEAM, new Item.Properties().tab(BoreCreativeTab.BORE_TAB).stacksTo(1)));
 
     public static void register(IEventBus eventBus)
     {

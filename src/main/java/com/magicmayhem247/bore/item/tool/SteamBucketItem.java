@@ -7,7 +7,6 @@ import java.util.function.Supplier;
 
 public class SteamBucketItem extends BucketItem
 {
-
     public SteamBucketItem(Supplier<? extends Fluid> supplier, Properties builder)
     {
         super(supplier, builder);

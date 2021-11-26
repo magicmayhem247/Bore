@@ -16,7 +16,7 @@ public class BoreFluids
 
     //Steam
     public static final RegistryObject<ForgeFlowingFluid> STEAM = FLUIDS.register("steam", () -> new SteamFluid.Source());
-    public static final RegistryObject<ForgeFlowingFluid> FLOWING_STEAM = FLUIDS.register("steam", () -> new SteamFluid.Flowing());
+    public static final RegistryObject<ForgeFlowingFluid> FLOWING_STEAM = FLUIDS.register("steam_flowing", () -> new SteamFluid.Flowing());
 
     public static void register(IEventBus eventBus)
     {

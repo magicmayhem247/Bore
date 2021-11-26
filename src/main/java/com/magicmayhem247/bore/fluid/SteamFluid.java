@@ -19,9 +19,9 @@ public abstract class SteamFluid extends ForgeFlowingFluid
                 BoreFluids.STEAM,
                 BoreFluids.FLOWING_STEAM,
                 FluidAttributes.builder(
-                        new ResourceLocation(Bore.MOD_ID, "block/water_still"),
-                        new ResourceLocation(Bore.MOD_ID, "block/water_flow")
-                ).overlay(new ResourceLocation(Bore.MOD_ID, "block/water_overlay"))
+                        new ResourceLocation(Bore.MOD_ID, "bore/textures/block/water_still"),
+                        new ResourceLocation(Bore.MOD_ID, "bore/textures/block/water_flow")
+                ).overlay(new ResourceLocation(Bore.MOD_ID, "bore/textures/block/water_overlay"))
                         .color(0xFFFFFF))
                 .block(BoreBlocks.STEAM)
                 .bucket(BoreItems.STEAM_BUCKET)

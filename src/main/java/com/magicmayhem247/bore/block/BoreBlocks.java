@@ -4,20 +4,21 @@ import com.magicmayhem247.bore.Bore;
 import com.magicmayhem247.bore.block.machine.FiredAlloyFurnaceBlock;
 import com.magicmayhem247.bore.block.machine.RudimentaryBoilerBlock;
 import com.magicmayhem247.bore.fluid.util.BoreFluids;
-import com.magicmayhem247.bore.fluid.util.FixedLiquidBlock;
 import com.magicmayhem247.bore.item.BoreCreativeTab;
 import com.magicmayhem247.bore.item.BoreItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.function.Supplier;
+
+import net.minecraftforge.registries.RegistryObject;
 
 public class BoreBlocks
 {
@@ -41,9 +42,12 @@ public class BoreBlocks
     public static final RegistryObject<RudimentaryBoilerBlock> RUDIMENTARY_BOILER_BLOCK = registerBlock("rudimentary_boiler", () -> new RudimentaryBoilerBlock(BlockBehaviour.Properties
             .of(Material.METAL).strength(8f)));
 
+    public static final RegistryObject<RudimentaryBoilerBlock> RUDIMENTARY_PRESS = registerBlock("rudimentary_press", () -> new RudimentaryBoilerBlock(BlockBehaviour.Properties
+            .of(Material.METAL).strength(8f)));
+
 
     //FluidBlocks
-    public static final RegistryObject<FixedLiquidBlock> STEAM = BLOCKS.register("steam", () -> new FixedLiquidBlock(BoreFluids.STEAM, BlockBehaviour.Properties.of(Material.WATER).noCollission().strength(100f).noDrops()));
+    public static final RegistryObject<LiquidBlock> STEAM = BLOCKS.register("steam", () -> new LiquidBlock(BoreFluids.STEAM, BlockBehaviour.Properties.of(Material.WATER).noCollission().strength(100f).noDrops()));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)

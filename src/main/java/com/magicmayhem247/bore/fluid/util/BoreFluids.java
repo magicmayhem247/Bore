@@ -2,13 +2,13 @@ package com.magicmayhem247.bore.fluid.util;
 
 import com.magicmayhem247.bore.Bore;
 import com.magicmayhem247.bore.fluid.SteamFluid;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
-import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import net.minecraftforge.registries.RegistryObject;
 
 public class BoreFluids
 {

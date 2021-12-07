@@ -11,6 +11,8 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import javax.annotation.Nullable;
 import java.util.Objects;
 
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+
 public class FiredAlloyFurnaceBlock extends Block
 {
     public FiredAlloyFurnaceBlock(Properties p_49795_)

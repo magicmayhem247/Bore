@@ -5,6 +5,8 @@ import net.minecraft.world.level.material.Fluid;
 
 import java.util.function.Supplier;
 
+import net.minecraft.world.item.Item.Properties;
+
 public class SteamBucketItem extends BucketItem
 {
     public SteamBucketItem(Supplier<? extends Fluid> supplier, Properties builder)

@@ -21,16 +21,13 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.util.ObfuscationReflectionHelper;
-import net.minecraftforge.fmllegacy.RegistryObject;
 
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 import java.util.function.Supplier;
 
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+
+/*
 public class FixedLiquidBlock extends LiquidBlock
 {
     public FixedLiquidBlock(Supplier<? extends FlowingFluid> supplier, Properties properties) {
@@ -121,3 +118,4 @@ public class FixedLiquidBlock extends LiquidBlock
         return getFluid().getPickupSound();
     }
 }
+*/

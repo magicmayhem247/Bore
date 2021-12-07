@@ -5,9 +5,10 @@ import com.magicmayhem247.bore.fluid.util.BoreFluids;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import net.minecraftforge.registries.RegistryObject;
 
 public class BoreItems
 {
@@ -20,6 +21,11 @@ public class BoreItems
 
     public static final RegistryObject<Item> BRASS_INGOT = ITEMS.register("brass_ingot", () -> new Item(new Item.Properties().tab(BoreCreativeTab.BORE_TAB)));
     public static final RegistryObject<Item> BRASS_NUGGET = ITEMS.register("brass_nugget", () -> new Item(new Item.Properties().tab(BoreCreativeTab.BORE_TAB)));
+
+    //Parts
+    public static final RegistryObject<Item> RUDIMENTARY_PISTON = ITEMS.register("rudimentary_piston", () -> new Item(new Item.Properties().tab(BoreCreativeTab.BORE_TAB)));
+    public static final RegistryObject<Item> BRASS_PISTON = ITEMS.register("brass_piston", () -> new Item(new Item.Properties().tab(BoreCreativeTab.BORE_TAB)));
+
 
     //Tools
     public static final RegistryObject<BucketItem> STEAM_BUCKET = ITEMS.register("steam_bucket", () -> new BucketItem(BoreFluids.STEAM, new Item.Properties().tab(BoreCreativeTab.BORE_TAB).stacksTo(1)));

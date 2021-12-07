@@ -1,0 +1,10 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "bore:block/rudimentary_press_top",
+    "front": "bore:block/rudimentary_press_front",
+    "side": "bore:block/rudimentary_press_side",
+    "bottom": "bore:block/rudimentary_press_bottom"
+  }
+}
+

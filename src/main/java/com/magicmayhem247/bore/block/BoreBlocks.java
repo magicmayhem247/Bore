@@ -3,6 +3,7 @@ package com.magicmayhem247.bore.block;
 import com.magicmayhem247.bore.Bore;
 import com.magicmayhem247.bore.block.machine.FiredAlloyFurnaceBlock;
 import com.magicmayhem247.bore.block.machine.RudimentaryBoilerBlock;
+import com.magicmayhem247.bore.block.machine.RudimentaryPressBlock;
 import com.magicmayhem247.bore.fluid.util.BoreFluids;
 import com.magicmayhem247.bore.item.BoreCreativeTab;
 import com.magicmayhem247.bore.item.BoreItems;
@@ -42,7 +43,7 @@ public class BoreBlocks
     public static final RegistryObject<RudimentaryBoilerBlock> RUDIMENTARY_BOILER_BLOCK = registerBlock("rudimentary_boiler", () -> new RudimentaryBoilerBlock(BlockBehaviour.Properties
             .of(Material.METAL).strength(8f)));
 
-    public static final RegistryObject<RudimentaryBoilerBlock> RUDIMENTARY_PRESS = registerBlock("rudimentary_press", () -> new RudimentaryBoilerBlock(BlockBehaviour.Properties
+    public static final RegistryObject<RudimentaryPressBlock> RUDIMENTARY_PRESS = registerBlock("rudimentary_press", () -> new RudimentaryPressBlock(BlockBehaviour.Properties
             .of(Material.METAL).strength(8f)));
 
 
